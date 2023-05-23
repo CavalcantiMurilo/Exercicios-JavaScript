@@ -978,5 +978,41 @@ function Exer69(){
     let media = soma / qntd
     alert("O valor total em estoque é R$    "+soma+"\n A média dos valores é "+ media)
 }
+    
+function Exer70() {
+    let numero = parseInt(prompt("Escreva o 1º valor: "))
+    let maior = numero
+    let menor = numero
+
+    for (let i = 2; i <= 10; i++) {
+        numero = parseInt(prompt("Escreva o " + i + "º valor: "))
+
+        if (numero > maior) {
+            maior = numero
+        } else if (numero < menor) {
+            menor = numero
+        }
+    }
+    alert("O menor numero é " + menor + " e o maior número é " + maior)
+}
+    
+function Exer71(){
+    let quantidade = parseInt(prompt("Quantos números deseja digitar?"))
+    let numero = parseInt(prompt("Digite o 1º valor"))
+    let maior = numero
+    let soma = numero
+
+    for (let i = 2; i <= quantidade; i++) {
+        numero = parseInt(prompt("Digite o " + i + "º valor"))
+
+        soma = soma + numero
+
+        if (numero > maior) {
+            maior = numero
+        }   
+    }
+    let media = soma/quantidade
+    alert("O maior número é " + maior+"\nA média desses valores é igual a "+soma/quantidade)
+}
 
 
